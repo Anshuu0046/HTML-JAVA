@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+	<script src="jquery-3.7.1-js"></script>
+	<script>
+		$(document).ready(function(){
+		$("img").mouseenter(function(){
+		  alert(" Curser Is ON The Img")
+		});
+		$("img").mouseleave(function(){
+		  alert(" Curser Is OFF The Img.")
+		});
+		$(".b1").click(function(){
+		$("#test").hide();
+		});
+		$(".b2").dblclick(function(){
+		$("#test1").hide();
+		});
+		});
+	</script>
+		<style>
+		#m1{
+		margin: 30px ;
+		padding: 20px;
+		border: solid 3px;
+		border-color: lightblue;
+		color:black;
+		font-size:20px;
+		font-family: "Lucida Console", "Courier New", monospace;
+		}
+		
+
+		table,tr{
+		border: solid 1px;
+		border-color: hotpink;
+		}
+		
+		
+		td{
+		padding:10px;
+		text-align:none;
+		}
+		
+
+		
+		</STYLE>
+	</HEAD>
+	<BODY bgcolor="lightyellow">
+	
+	<div id="m1">
+	<table align="center">
+	<form>
+	
+	<tr colspan="2">
+	<td ><H2 align="center"> NEW USER </H2></td>
+	</tr>
+	
+	<tr colspan="2">
+	<td ><img src="SOA.png" heigth="250px" width="200px"></td>
+	</tr>
+	
+	
+	 <tr> 
+	 <td> <label for="fname">Name:</label> </td>
+	 <td> <input type="text" id="name" name="name"> </td>
+	 </tr>
+	 
+	 <tr>
+	 <td><label for="id">ID:</label></td>
+	 <td><input type="email" id="email" name="idd"></td>
+	 </tr>
+	 
+	 <tr>
+	 <td><label for="pass">Password:</label></td>
+	 <td><input type="password" id="pass" name="pass"></td>
+	 </tr>
+	 
+	 <tr>
+	 <td> <input type="reset" value="Reset"></td>
+	  <td> <input type="submit" value="Submit"></td>
+	 </tr>
+	 
+	</form>
+	</fieldset>
+	</table>
+	</div>
+	</BODY>
+
+</HTML>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+width: 100%;
+padding: 10px 16px;
+margin: 6px 0;
+display: inline-block;
+border: 3px HOTPINK;
+border-radius: 5px;
+box-sizing: border-box;
+}
+input[type=submit] {
+width: 100%;
+background-color: orange;
+color: brown;
+padding: 12px 16px;
+margin: 6px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type=submit]:hover {
+background-color: CYAN;
+}
+div {
+border-radius: 3px;
+background-color: MEDIUMPURPLE;
+padding: 15px;
+}
+</style>
+
+<body>
+<h3>fORMS IN HTML</h3>
+<div>
+<form action=“/action_page.php”>
+<label for=“emp”>STUDENT NAME: </label><input type=“text” id=“emp”
+name=“employee name” placeholder=“Your-name..”><br><br><label
+for=“dept”>DEPARTMENT: </label><input type=“text” id=“dept”
+name=“department” placeholder=“Your department..”><BR><br><label
+for=“city”><B>CITY:</B></label><select id=“city” name=“city”>
+<option value=“CUTTUCK”>CUTTUCK</option>
+<option value=“BHUBANESWAR”>BHUBANESWAR</option>
+<option value=“BERHAMPUR”>BERHAMPUR</option>
+</select> <input type=“submit” value=“Conﬁrm”>
+</form>
+</div>
+</body>
+</html>

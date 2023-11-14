@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Animate </title>
+<script src="jquery-3.7.1.js">
+</script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+		$("div").animate({
+		
+left: '500px',
+
+right: '300px',
+		
+opacity: '0.8',
+		
+height: '100px',
+		
+width: 'toggle'
+		});
+		
+		$(".div1").animate({
+		
+left: '500px',
+
+right: '800px',
+		
+opacity: '0.8',
+		
+height: '100px',
+		
+width: 'toggle'
+		});
+		
+		$(".div2").animate({
+		
+left: '500px',
+
+right: '800px',
+		
+opacity: '0.8',
+		
+height: '100px',
+		
+width: 'toggle'
+		});
+});
+});
+</script>
+</head>
+<body>
+<button>Tap To Animate!</button>
+<div style="background:green; height:80px;width:90px; position:relative;"></div>
+<div style="background:#ccc; height:80px;width:90px; position:relative;" class="div1"></div>
+<div style="background:orange; height:80px;width:90px; position:relative;" class="div2"></div>
+</body>
+</html>

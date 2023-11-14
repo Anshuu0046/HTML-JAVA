@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+      <script>
+$(document).ready(function(){
+  $("#b1").click(function(){
+    $("p").slideDown();
+    });
+   $("#b2").click(function(){
+    $("p").slideUp();
+    });
+    $("#b3").click(function(){
+    $("p").slideToggle();
+  });
+});
+     </script>
+     <style>
+     #mybox1{height:3cm;width:10cm;padding:5px;border:solid red 4px}
+     #mybox2{height:5cm;width:10cm;padding:5px;border:solid BLUE 4px}
+   
+     </style>
+</head>
+      <body>
+      <center>
+       <h1 id="mybox1">HEADING</h1>
+       <p id="mybox2">SLIDE BOX</p>
+       
+     <button id="b1">SLIDE DOWN</button>
+     <button id="b2">SLIDE UP</button>
+     <button id="b3">SLIDE TOGGLE</button>
+     <center>
+
+</body>
+</html>

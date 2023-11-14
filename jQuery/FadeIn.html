@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+
+    <script src="jquery-3.7.1.js"> </script>
+     <script>
+         $(document).ready(function() {
+            $("button").click(function() {
+                
+                $("#1").fadeIn(1000);
+		        $("#2").fadeOut(2000);
+		        $("#3").fadeToggle(3000);
+            });
+            });
+        
+            </script>
+            <style>
+                h1 {
+                    text-align: center;
+                    margin: 5px;
+                    border: solid 7px pink;
+                    height: auto;
+                    width: auto;
+                }
+
+                
+                
+                th,td {
+                    margin: auto;
+                    border: solid 5px hotpink;
+                 
+                }
+
+                
+            </style>
+</head>
+<body>
+    <h1 > Image gallery </h1>
+    <table>
+        <tr> 
+            <th> 1 </th>
+            <th> 2</th>
+            <th> 3</th>
+        </tr>
+        <tr> 
+            <td id="1"> <img src="image.jpg" height="250px" width="250px" ></td>
+            <td id="2"> <img src="kedar.jpeg" height="250px" width="250px"></td>
+            <td id="3"> <img src="jal.jpg" height="250px" width="250px"></td>
+        </tr>
+        <tr>
+            <td> <button> fading effect.</button> </td>
+            <td> <button> fading effect.</button> </td>
+            <td> <button> fading effect.</button> </td>
+
+        </tr>
+
+    </table>
+</body>
+</html>
