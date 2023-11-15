@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("ol").append("<li>"+ $("#LOST").val() +"</li>");
+  });
+
+  $("#btn2").click(function(){
+    $("ol").prepend("<li>"+ $("#LOST").val() +"</li>");
+  });
+});
+</script>
+<style> 
+  body {
+    background: linear-gradient(135deg, #33ccff, #ff99cc, red);
+    background-repeat: no-repeat;
+    
+  }
+
+  ol {
+    background: linear-gradient(135deg, red, blue);
+    -webkit-background-clip: text;
+    font-weight: 500;
+    font-size: large;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  </style>
+</head>
+<body>
+<label for="LOST"> Enter text to append or prepend:</label>
+<input type="text" id="LOST">
+<ol>
+  <li>Eren Yaeger</li>
+  <li>Mikasa Ackerman</li>
+  <li>Armin arlet</li>
+  <li> Satoru Gojo </li>
+</ol>
+<button id="btn2">prepend items</button>
+<button id="btn1">append items</button>
+</body>
+</html>
+
+
+
+
+
+
