@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px;
+        }
+        
+        th, td {
+            border: 1px rgba(230, 6, 6, 0.966);
+            padding: 8px;
+            text-align: center;
+        }
+
+        #changeStyleBtn {
+            padding: 10px;
+            margin: 20px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function changeStyle() {
+            var table = document.getElementById("myTable");
+            
+            // Toggle border style and background color
+            if (table.style.borderStyle === "solid") {
+                table.style.borderStyle = "dashed";
+                table.style.backgroundColor = "violet";
+            } else {
+                table.style.borderStyle = "solid";
+                table.style.backgroundColor = "blue";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id="changeStyleBtn" onclick="changeStyle()">Change Style</button>
+    
+    <table id="myTable">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+    </table>
+</body>
+</html>

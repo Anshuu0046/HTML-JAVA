@@ -1,0 +1,68 @@
+
+    
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingardium Leviosa</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        #container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        #movingImage {
+            width: 333px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 2s linear;
+        }
+
+        button {
+            margin-top: 20px;
+            background: linear-gradient(35deg, cyan, hotpink);
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <img id="movingImage" src="witch.png" alt="Moving Image">
+</div>
+
+<button onclick="startMoving()">Wingardium Leviosa</button>
+
+<script>
+    function startMoving() {
+        var container = document.getElementById("container");
+        var movingImage = document.getElementById("movingImage");
+        
+
+        // Reset the image position to the initial state
+        movingImage.style.transform = "translateX(0)";
+
+        // Calculate the distance to move (width of the container minus width of the image)
+        var moveDistance = container.offsetWidth - movingImage.offsetWidth;
+
+        // Apply the transformation to move the image to the right and back to the left
+        movingImage.style.transform = "translateX(" + moveDistance + "px)";
+
+        // Set up the animation to repeat
+        movingImage.addEventListener('transitionend', function() {
+            movingImage.style.transform = "translateX(0)";
+        });
+    }
+</script>
+
+</body>
+</html>
